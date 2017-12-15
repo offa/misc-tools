@@ -5,11 +5,11 @@ Adds a license header to files with a given file extension.
 
 ## Usage
 
-Reads the license header from the `license_header` file and adds it to all files matching with a given file extension.
+Add the license's content to `license_header` and run the script.
+This reads the license header from the `license_header` file and adds it to all files matching with a given file extension.
 
 ```bash
 ./add_license_header.sh <Extensions>
-
 ```
 
 #### Parameter
