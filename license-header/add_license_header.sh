@@ -8,6 +8,13 @@ FILENAME_ARG=${2:-license_header}
 
 FILTER=${FILTER_ARG//,/\|}
 
+if [[ ! -f ${FILENAME_ARG} ]]
+then
+    echo "'${FILENAME_ARG}' is not a file."
+    exit 1
+fi
+
+
 echo -e "Header: ${FILENAME_ARG}\nFilter: '${FILTER_ARG}'\n"
 
 
