@@ -8,6 +8,12 @@ FILENAME_ARG=${2:-license_header}
 
 FILTER=${FILTER_ARG//,/\|}
 
+if (( $# < 1 ))
+then
+    echo "No argument"
+    exit 1
+fi
+
 if [[ ! -f ${FILENAME_ARG} ]]
 then
     echo "'${FILENAME_ARG}' is not a file."
