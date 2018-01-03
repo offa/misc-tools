@@ -26,5 +26,5 @@ Run the script with the old and new header lines. This updates all files accordi
 > ./update_license_header.sh cpp,h "Copyright \(C\) 2017 offa" "Copyright (C) 2017-2018 offa"
 
 # Update only the second year on all Java files (*.java)
-./update_license_header.sh java "Copyright \(C\) ([0-9]*)-2017  offa" "Copyright \(C\) \1-2018  offa"
+> ./update_license_header.sh java "Copyright \(C\) ([0-9]*)-2017  offa" "Copyright \(C\) \1-2018  offa"
 ```
