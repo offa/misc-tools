@@ -1,6 +1,6 @@
 # Add license header
 
-Adds a license header to files with a given file extension.
+Adds a license header to all files with a given file extension.
 
 
 ## Usage
