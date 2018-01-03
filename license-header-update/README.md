@@ -15,14 +15,14 @@ Run the script with the old and new header lines. This updates all files accordi
 #### Parameter
 
 - **extensions:** Comma separated list of file extensions (without the `.`)
-- **old-string:** Old line to update
-- **new-string:** New line
+- **old-string:** Old line to update (Regex)
+- **new-string:** New line (Regex)
 
 
 ## Example
 
 ```bash
 # Updates the header of all C++ files (*.h, *.cpp)
-> ./update_license_header.sh cpp,h "Copyright (C) 2017 offa" "Copyright (C) 2017-2018 offa"
+> ./update_license_header.sh cpp,h "Copyright \(C\) 2017 offa" "Copyright (C) 2017-2018 offa"
 ```
 
