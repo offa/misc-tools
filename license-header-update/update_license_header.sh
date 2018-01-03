@@ -22,6 +22,6 @@ echo -e "Old Header: '${OLD_STR}'\nNew Header: '${NEW_STR}'\nFilter: '${FILTER_A
 
 for f in **/*.@(${FILTER})
 do
-    echo " * Add license to <${f}>"
+    echo " * Update header of <${f}>"
     sed -i "s/${OLD_STR}/${NEW_STR}/g" ${f}
 done
